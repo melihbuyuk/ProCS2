@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="ListCollCell" customModule="ProCS2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNB-QA-Gpp">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="mma-k7-Tq4"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liked" translatesAutoresizingMaskIntoConstraints="NO" id="hL1-8k-zUn">
+                        <rect key="frame" x="120" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6qj-um-8e8"/>
+                            <constraint firstAttribute="height" constant="20" id="gl2-rd-K2b"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsB-ka-Px2">
+                        <rect key="frame" x="10" y="160" width="135" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEg-5e-N4F">
+                        <rect key="frame" x="10" y="187" width="135" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jEg-5e-N4F" firstAttribute="top" secondItem="wsB-ka-Px2" secondAttribute="bottom" constant="10" id="8xd-IL-byw"/>
+                <constraint firstItem="wsB-ka-Px2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="C5Y-Cg-PS1"/>
+                <constraint firstAttribute="trailing" secondItem="eNB-QA-Gpp" secondAttribute="trailing" id="EyW-DM-83H"/>
+                <constraint firstAttribute="trailing" secondItem="wsB-ka-Px2" secondAttribute="trailing" constant="5" id="Hww-2u-Wyw"/>
+                <constraint firstItem="eNB-QA-Gpp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UY3-ZO-N8P"/>
+                <constraint firstItem="jEg-5e-N4F" firstAttribute="trailing" secondItem="wsB-ka-Px2" secondAttribute="trailing" id="cBn-fa-DVH"/>
+                <constraint firstItem="hL1-8k-zUn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dhR-G7-PZr"/>
+                <constraint firstAttribute="top" secondItem="eNB-QA-Gpp" secondAttribute="top" id="mfb-2Z-MGW"/>
+                <constraint firstItem="wsB-ka-Px2" firstAttribute="top" secondItem="eNB-QA-Gpp" secondAttribute="bottom" constant="10" id="n3U-NM-opR"/>
+                <constraint firstAttribute="trailing" secondItem="hL1-8k-zUn" secondAttribute="trailing" constant="10" id="qal-HV-u4w"/>
+                <constraint firstItem="jEg-5e-N4F" firstAttribute="leading" secondItem="wsB-ka-Px2" secondAttribute="leading" id="xgY-YJ-6Q6"/>
+            </constraints>
+            <size key="customSize" width="212" height="254"/>
+            <connections>
+                <outlet property="imgLike" destination="hL1-8k-zUn" id="vPa-pC-m2H"/>
+                <outlet property="imgTV" destination="eNB-QA-Gpp" id="ets-s4-J5t"/>
+                <outlet property="lblName" destination="wsB-ka-Px2" id="Utu-Uh-VWz"/>
+                <outlet property="lblRating" destination="jEg-5e-N4F" id="gy8-Em-x67"/>
+            </connections>
+            <point key="canvasLocation" x="-126.08695652173914" y="47.544642857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="liked" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_ProCS2UITests {
+  umbrella header "Pods-ProCS2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

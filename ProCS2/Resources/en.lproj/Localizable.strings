@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ProCS2
+
+  Created by Serhat Akkurt on 18.02.2020.
+  Copyright © 2020 Serhat Akkurt. All rights reserved.
+*/
+
+"err" = "Error";
+"ok" = "OK";
+"season" = "Season: ";
+"episode" = "Episode: ";
+"rating" = "Rating: ";
+"listTitle" = "TV List";
+"tryagain" = "Try Again";
